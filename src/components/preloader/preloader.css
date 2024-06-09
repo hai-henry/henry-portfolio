@@ -62,12 +62,11 @@ body {
     background: #1b1b1b;
     flex-direction: column;
     color: white;
-    overflow: hidden;
     z-index: 50;
 }
 
 .main__page__content h1 {
-    font-size: 100x;
+    font-size: 100px;
     font-family: 'Montreal Bold';
     text-transform: uppercase;
 }
