@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 50;
-    background: #f5e0bb;
+    background: #363636;
 }
 
 #percent {
@@ -41,32 +41,5 @@ body {
 #bar__confirm {
     width: 0%;
     height: 100vh;
-    background: #1b1b1b;
-}
-
-.main__page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-
-.main__page__content {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: #1b1b1b;
-    flex-direction: column;
-    color: white;
-    z-index: 50;
-}
-
-.main__page__content h1 {
-    font-size: 100px;
-    font-family: 'Montreal Bold';
-    text-transform: uppercase;
+    background: #000000;
 }
