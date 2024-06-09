@@ -1,73 +1,73 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  overflow: hidden;
-  font-family: "Montreal Book";
+    overflow: hidden;
+    font-family: 'Montreal Book';
 }
 
 .loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 50;
-  background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background: #f5e0bb;
 }
 
 #percent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  color: white;
-  font-size: 150px;
-  mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: 150px;
+    mix-blend-mode: difference;
 }
 
 #bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
 }
 
 #bar__confirm {
-  width: 0%;
-  height: 100vh;
-  background: black;
+    width: 0%;
+    height: 100vh;
+    background: #1b1b1b;
 }
 
 .main__page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 .main__page__content {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background: black;
-  flex-direction: column;
-  color: white;
-  overflow: hidden;
-  z-index: 50;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #1b1b1b;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    z-index: 50;
 }
 
 .main__page__content h1 {
-  font-size: 100x;
-  font-family: "Montreal Bold";
-  text-transform: uppercase;
+    font-size: 100x;
+    font-family: 'Montreal Bold';
+    text-transform: uppercase;
 }
