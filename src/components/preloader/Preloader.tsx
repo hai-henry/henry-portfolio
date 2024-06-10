@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
+import LettersFadeIn from '../lettersfadein/Lettersfadein'
 import './preloader.css'
 
 const Preloader: React.FC = () => {
@@ -10,16 +11,12 @@ const Preloader: React.FC = () => {
     useEffect(() => {
         // Pause animation
         load.current = gsap.timeline({ paused: true })
-        // Percent & bar animates then fades out
-        load.current.to('#percent, #bar', {
+        // Percent & bar animates then loading screen fades out
+        load.current.to('#percent, #bar, .loader', {
             duration: 0.8,
             opacity: 0, // Animate to 0 opacity
             zIndex: -1,
         })
-        // Fade out loading screen
-        load.current.to('.loader', { opacity: 0 })
-
-        //TODO: Add GSAP text animation to info
     }, [])
 
     useEffect(() => {
@@ -46,6 +43,11 @@ const Preloader: React.FC = () => {
         }
     }, [])
 
+    // Format number to 3 digits
+    const formatNumber = (num: number): string => {
+        return String(num).padStart(3, '0')
+    }
+
     return (
         <>
             <div className="loader">
@@ -57,14 +59,9 @@ const Preloader: React.FC = () => {
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
                     </div>
-                    <div id="percent">{width}</div>
+                    <div id="percent">{formatNumber(width)}</div>
                 </div>
-                <div className="info">
-                    <p className="info__name">Henry Ho</p>
-                    <p className="info__desc">
-                        Software + Architecture Portfolio
-                    </p>
-                </div>
+                <LettersFadeIn />
             </div>
         </>
     )
