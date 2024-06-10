@@ -6,7 +6,7 @@
 
 body {
     overflow: hidden;
-    font-family: 'Montreal Book';
+    font-family: 'Montreal Bold';
 }
 
 .loader {
@@ -16,17 +16,22 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 50;
-    background: #363636;
+
+    background: #000000;
 }
 
 #percent {
+    position: absolute;
+    top: -30%;
+    right: -20%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
+
     color: white;
-    font-size: 150px;
+    font-size: 14.5em;
     mix-blend-mode: difference;
 }
 
@@ -41,5 +46,18 @@ body {
 #bar__confirm {
     width: 0%;
     height: 100vh;
-    background: #000000;
+
+    background: #242424;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
 }

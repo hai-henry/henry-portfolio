@@ -8,13 +8,15 @@ const Preloader: React.FC = () => {
     const load = useRef<gsap.core.Timeline>() // GSAP timeline reference
 
     useEffect(() => {
-        load.current = gsap.timeline({ paused: true }) // Pause animation
+        // Pause animation
+        load.current = gsap.timeline({ paused: true })
         // Percent & bar animates then fades out
         load.current.to('#percent, #bar', {
             duration: 0.8,
             opacity: 0, // Animate to 0 opacity
             zIndex: -1,
         })
+        // Fade out loading screen
         load.current.to('.loader', { opacity: 0 })
     }, [])
 
@@ -46,12 +48,12 @@ const Preloader: React.FC = () => {
         <>
             <div className="loader">
                 <div className="progress">
-                    <div id="bar">
+                    {/* <div id="bar">
                         <div
                             id="bar__confirm"
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
-                    </div>
+                    </div> */}
                     <div id="percent">{width}</div>
                 </div>
             </div>
