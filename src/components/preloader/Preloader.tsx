@@ -18,6 +18,8 @@ const Preloader: React.FC = () => {
         })
         // Fade out loading screen
         load.current.to('.loader', { opacity: 0 })
+
+        //TODO: Add GSAP text animation to info
     }, [])
 
     useEffect(() => {
@@ -48,13 +50,20 @@ const Preloader: React.FC = () => {
         <>
             <div className="loader">
                 <div className="progress">
-                    {/* <div id="bar">
+                    {/* Loading bar, comment back in if wanted */}
+                    <div id="bar">
                         <div
                             id="bar__confirm"
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
-                    </div> */}
+                    </div>
                     <div id="percent">{width}</div>
+                </div>
+                <div className="info">
+                    <p className="info__name">Henry Ho</p>
+                    <p className="info__desc">
+                        Software + Architecture Portfolio
+                    </p>
                 </div>
             </div>
         </>
