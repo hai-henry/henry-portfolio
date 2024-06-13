@@ -66,9 +66,12 @@ const Preloader: React.FC = () => {
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
                     </div> */}
-                    <div id="percent">{formatNumber(width)}</div>
+                    <div id="percent">
+                        {formatNumber(width)}
+                        <LettersFadeIn />{' '}
+                        {/*Refer to lettersfadein component to make changes to component*/}
+                    </div>
                 </div>
-                <LettersFadeIn />
             </div>
         </>
     );

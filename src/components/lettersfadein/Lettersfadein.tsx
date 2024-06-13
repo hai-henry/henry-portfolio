@@ -19,7 +19,7 @@ const LettersFadeIn: React.FC = () => {
                 timeline.from(element.querySelectorAll('.char'), {
                     // Select all elements with class .char
                     opacity: 0,
-                    duration: 0.2,
+                    duration: 0.8,
                     ease: 'power1.out',
                     stagger: { amount: 0.8 },
                 });
