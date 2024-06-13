@@ -1,6 +1,6 @@
-import Preloader from './components/preloader/Preloader'
-import Home from './pages/home/Home'
-import './App.css'
+import Preloader from './components/preloader/Preloader';
+import Home from './pages/home/Home';
+import './App.css';
 
 function App() {
     return (
@@ -8,7 +8,7 @@ function App() {
             <Preloader />
             <Home />
         </>
-    )
+    );
 }
 
-export default App
+export default App;

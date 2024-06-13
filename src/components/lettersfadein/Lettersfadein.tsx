@@ -1,43 +1,41 @@
-import { useEffect, useRef } from 'react'
-import SplitType from 'split-type'
-import './lettersfadein.css'
-
-window.addEventListener('DOMContentLoaded', (event: any) => {
-    let typeSplit = new SplitType('[text-split]', {
-        types: 'words,chars',
-        tagName: 'span',
-    })
-})
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import SplitType from 'split-type';
+import './lettersfadein.css';
 
 const LettersFadeIn: React.FC = () => {
-    const elementsRef = useRef<NodeListOf<Element> | null>(null)
     useEffect(() => {
-        if (elementsRef.current) {
-            elementsRef.current.forEach((element, index) => {
-                let tl = gsap.timeline({ paused: true })
-                tl.from(element.querySelectorAll('.char'), {
+        // Split class .split into words and characters
+        const typeSplit = new SplitType('.split', {
+            types: 'words,chars',
+            tagName: 'span', // Wrap each char and word in span
+        });
+
+        document
+            .querySelectorAll('[data-letters-fade-in]') // Select all elements with data-letters-fade-in attribute
+            .forEach((element) => {
+                //For each selected element
+                const timeline = gsap.timeline(); // Create a gsap timeline
+                timeline.from(element.querySelectorAll('.char'), {
+                    // Select all elements with class .char
                     opacity: 0,
                     duration: 0.2,
                     ease: 'power1.out',
                     stagger: { amount: 0.8 },
-                })
-                tl.play() // Play the animation
-            })
-        }
-    }, [])
+                });
+            });
+    }, []);
 
     return (
-        <>
-            <div className="info">
-                <p letters-fade-in="" text-split="" className="info__name">
-                    Henry Ho
-                </p>
-                <p letters-fade-in="" text-split="" className="info__desc">
-                    Software + Architecture Portfolio
-                </p>
-            </div>
-        </>
-    )
-}
+        <div className="info">
+            <p className="split" data-letters-fade-in>
+                Henry Ho
+            </p>
+            <p className="split" data-letters-fade-in>
+                Software + Architecture Portfolio
+            </p>
+        </div>
+    );
+};
 
-export default LettersFadeIn
+export default LettersFadeIn;
