@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import LettersFadeIn from '../lettersfadein/Lettersfadein';
 import './preloader.css';
 
+// TODO: Use tailwindcss for styling and responsive design
+
 const Preloader: React.FC = () => {
     const [width, setWidth] = useState<number>(1); // Loading bar & percentage value
     const intervalId = useRef<number | null>(null); // Store setInterval reference
@@ -68,7 +70,7 @@ const Preloader: React.FC = () => {
                     </div> */}
                     <div id="percent">
                         {formatNumber(width)}
-                        <LettersFadeIn />{' '}
+                        <LettersFadeIn />
                         {/*Refer to lettersfadein component to make changes to component*/}
                     </div>
                 </div>

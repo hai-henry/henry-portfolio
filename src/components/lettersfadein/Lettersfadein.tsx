@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import SplitType from 'split-type';
-import './lettersfadein.css';
 
 const LettersFadeIn: React.FC = () => {
     useEffect(() => {
@@ -27,7 +26,7 @@ const LettersFadeIn: React.FC = () => {
     }, []);
 
     return (
-        <div className="info">
+        <div className="info overflow-hidden flex flex-col text-left font-montrealBook text-[18px] uppercase">
             <p className="split" data-letters-fade-in>
                 Henry Ho
             </p>

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Montreal Book';
     src: url('src/assets/fonts/PPNeueMontreal-Book.otf') format('truetype');
@@ -20,8 +24,14 @@
         format('truetype');
 }
 @font-face {
-    font-family: 'PP Neue Montreal Thin';
+    font-family: 'Montreal Thin';
     src: url('src/assets/fonts/PPNeueMontreal-Thin.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
