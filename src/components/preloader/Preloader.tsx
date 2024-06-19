@@ -77,12 +77,17 @@ const Preloader: React.FC = () => {
                     </div> */}
                     <div
                         id="percent"
-                        className="absolute font-montrealBold text-white text-12.5em flex flex-col items-center justify-center 
-                        top-[-20%] right-[-20%] h-screen w-full mix-blend-difference"
+                        className="flex flex-col h-screen w-full mix-blend-difference"
                     >
-                        {formatNumber(width)}
-                        <LettersFadeIn />
-                        {/*Refer to lettersfadein component to make changes to component*/}
+                        <div
+                            className="percent__value absolute flex flex-col justify-start items-end w-screen h-screen
+                            font-montrealBold text-white text-12.5em
+                            px-96 py-72"
+                        >
+                            {formatNumber(width)}
+                            <LettersFadeIn />
+                            {/*Refer to lettersfadein component to make changes to component*/}
+                        </div>
                     </div>
                 </div>
             </div>
