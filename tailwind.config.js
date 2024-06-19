@@ -15,7 +15,7 @@ export default {
                 montrealThin: ['"Montreal Thin"', 'sans-serif'],
             },
             fontSize: {
-                '12.5em': '12.5em',
+                '12.5em': '12.5em', // 200px
             },
         },
     },

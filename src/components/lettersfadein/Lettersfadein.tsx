@@ -9,8 +9,8 @@ import SplitType from 'split-type';
 
 const LettersFadeIn: React.FC = () => {
     useEffect(() => {
-        // Split class .split into words and characters
-        const typeSplit = new SplitType('.split', {
+        // Remove the declaration and assignment of typeSplit since it is not being used
+        new SplitType('.split', {
             types: 'words,chars',
             tagName: 'span', // Wrap each char and word in span
         });

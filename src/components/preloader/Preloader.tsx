@@ -4,7 +4,7 @@ and a short description of the webpage with LettersFadeIn component.
 Refer to LettersFadeIn component to make changes to the text that fades in.
 */
 
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import LettersFadeIn from '../LettersFadeIn/Lettersfadein';
 
@@ -62,7 +62,7 @@ const Preloader: React.FC = () => {
 
     return (
         <>
-            <div className="loader absolute top-0 left-0 w-full h-screen z-50 bg-black">
+            <div className="loader overflow-hidden absolute top-0 left-0 w-full h-screen z-50 bg-black">
                 <div className="progress">
                     {/* Loading bar, comment back in if wanted */}
                     {/* <div
