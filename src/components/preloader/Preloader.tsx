@@ -1,6 +1,12 @@
+/* 
+Preloader component uses LettersFadeIn component to display the percentage value 
+and a short description of the webpage with LettersFadeIn component.
+Refer to LettersFadeIn component to make changes to the text that fades in.
+*/
+
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
-import LettersFadeIn from '../lettersfadein/Lettersfadein';
+import LettersFadeIn from '../LettersFadeIn/Lettersfadein';
 
 const Preloader: React.FC = () => {
     const [width, setWidth] = useState<number>(1); // Loading bar & percentage value
@@ -59,19 +65,20 @@ const Preloader: React.FC = () => {
             <div className="loader absolute top-0 left-0 w-full h-screen z-50 bg-black">
                 <div className="progress">
                     {/* Loading bar, comment back in if wanted */}
-                    <div
+                    {/* <div
                         id="bar"
                         className="absolute top-0 left-0 h-screen w-full"
                     >
                         <div
                             id="bar__confirm"
-                            className="w-0 h-screen bg-zinc-900"
+                            className="w-0 h-screen bg-white" // Change "bg-white" to color of choice, refer to tailwind "bg" docs
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
-                    </div>
+                    </div> */}
                     <div
                         id="percent"
-                        className="absolute top-[-20%] right-[-20%] flex flex-col items-center justify-center h-screen w-full font-montrealBold text-white text-12.5em mix-blend-difference"
+                        className="absolute font-montrealBold text-white text-12.5em flex flex-col items-center justify-center 
+                        top-[-20%] right-[-20%] h-screen w-full mix-blend-difference"
                     >
                         {formatNumber(width)}
                         <LettersFadeIn />

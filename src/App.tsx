@@ -1,4 +1,4 @@
-import Preloader from './components/preloader/Preloader';
+import Preloader from './components/Preloader/Preloader';
 import Home from './pages/home/Home';
 import './App.css';
 

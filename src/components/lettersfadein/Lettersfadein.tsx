@@ -1,3 +1,8 @@
+/*
+LettersFadeIn is a component that fades in letters using given text.
+Change text in .split class to change text that fades in.
+ */
+
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import SplitType from 'split-type';
