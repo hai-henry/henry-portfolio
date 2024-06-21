@@ -17,6 +17,10 @@ export default {
             fontSize: {
                 '12.5em': '12.5em', // 200px
             },
+            colors: {
+                primary: '#000000',
+                secondary: '#FFFFFF',
+            },
         },
     },
     plugins: [],

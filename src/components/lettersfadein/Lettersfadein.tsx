@@ -31,7 +31,10 @@ const LettersFadeIn: React.FC = () => {
     }, []);
 
     return (
-        <div className="info overflow-hidden flex flex-col text-left font-montrealBook text-lg uppercase">
+        <div
+            className="info overflow-hidden flex flex-col text-left font-montrealBook uppercase 
+            text-sm md:text-lg"
+        >
             <p className="split" data-letters-fade-in>
                 Henry Ho
             </p>

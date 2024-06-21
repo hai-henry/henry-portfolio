@@ -40,7 +40,7 @@ const Preloader: React.FC = () => {
                     if (intervalId.current) {
                         clearInterval(intervalId.current); // If percent reaches 100%, clear interval
                     }
-                    load.current?.play(); // Play GSAP timeline
+                    // load.current?.play(); // Play GSAP timeline
                     return prev; // Return value of percent and loading bar width
                 }
             });
@@ -62,27 +62,36 @@ const Preloader: React.FC = () => {
 
     return (
         <>
-            <div className="loader overflow-hidden absolute top-0 left-0 w-full h-screen z-50 bg-black">
+            <div
+                className="loader overflow-hidden absolute top-0 left-0 w-screen h-screen z-50 bg-primary
+            "
+            >
                 <div className="progress">
                     {/* Loading bar, comment back in if wanted */}
-                    {/* <div
+                    <div
                         id="bar"
-                        className="absolute top-0 left-0 h-screen w-full"
+                        className="absolute top-0 left-0 h-screen w-screen"
                     >
                         <div
                             id="bar__confirm"
-                            className="w-0 h-screen bg-white" // Change "bg-white" to color of choice, refer to tailwind "bg" docs
+                            className="w-0 h-screen bg-secondary" // Change "bg-white" to color of choice, refer to tailwind "bg" docs
                             style={{ width: `${width}%` }} // Increase loading bar "width" css style
                         ></div>
-                    </div> */}
+                    </div>
                     <div
                         id="percent"
-                        className="flex flex-col h-screen w-full mix-blend-difference"
+                        className="flex flex-col mix-blend-difference"
                     >
                         <div
-                            className="percent__value absolute flex flex-col justify-start items-end w-screen h-screen
-                            font-montrealBold text-white text-12.5em
-                            px-96 py-72"
+                            className="percent__value absolute flex flex-col justify-center items-center w-screen h-screen
+                            font-montrealBold text-secondary 
+                            text-9xl 
+                            md:text-12.5em
+
+                            lg:bottom-52
+                            lg:left-52
+                            xl:left-96
+                            "
                         >
                             {formatNumber(width)}
                             <LettersFadeIn />
