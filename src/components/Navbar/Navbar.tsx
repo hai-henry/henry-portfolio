@@ -4,10 +4,13 @@ const Navbar: React.FC = () => {
     return (
         <>
             <nav className="navbar flex flex-row">
-                <h1 className="navbar__logo font-montrealBold text-left text-xl text-white uppercase">
+                <p
+                    className="navbar__logo font-montrealBold text-white uppercase
+                text-xs"
+                >
                     Henry Ho
-                </h1>
-
+                </p>
+                {/* 
                 <a href="">Index</a>
                 <a href="">Work</a>
                 <a href="">Concepts</a>
@@ -16,7 +19,7 @@ const Navbar: React.FC = () => {
 
                 <p>Based in Oklahoma City</p>
 
-                <p>2024 12:11 PM</p>
+                <p>2024 12:11 PM</p> */}
             </nav>
         </>
     );
