@@ -81,7 +81,6 @@ const Preloader: React.FC = () => {
                     className="absolute top-0 left-0 h-screen w-screen"
                 >
                     <div
-                        id="bar__confirm"
                         className="w-0 h-screen bg-secondary" // Change "bg-white" to color of choice, refer to tailwind "bg" docs
                         style={{ width: `${width}%` }} // Increase loading bar "width" css style
                     ></div>
@@ -91,7 +90,7 @@ const Preloader: React.FC = () => {
                     className="flex flex-col mix-blend-difference"
                 >
                     <div
-                        className="percent__value absolute flex flex-col justify-center items-center w-screen h-screen
+                        className="absolute flex flex-col justify-center items-center w-screen h-screen
                             font-montrealBold text-secondary 
                             text-9xl 
                             md:text-12.5em
