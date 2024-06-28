@@ -1,11 +1,18 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
+import Header from '../../components/Header/Header';
+import LocalTime from '../../components/LocalTime/LocalTime';
 
 const Home = () => {
     return (
         <>
             <Navbar />
-            <h1 className="font-montrealBold uppercase text-6xl">Home</h1>
+            <Header
+                title="Developer / Designer"
+                description="Portfolio ©"
+                year={2024}
+            />
+            <LocalTime city="Oklahoma City" />
         </>
     );
 };
