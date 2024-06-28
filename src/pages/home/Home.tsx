@@ -12,7 +12,9 @@ const Home = () => {
                 description="Portfolio ©"
                 year={2024}
             />
-            <LocalTime city="Oklahoma City" />
+            {/* Change "city" to change "Based in {city}" change localTimeZone to preferred time zone
+                    Refer to https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for list of timezones */}
+            <LocalTime city="Oklahoma City" localTimeZone="America/Chicago" />
         </>
     );
 };

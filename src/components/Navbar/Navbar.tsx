@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar: React.FC = () => {
     return (
         <>
-            <nav>
+            <nav className="">
                 <ul className="w-screen h-auto flex flex-row gap-x-[10%] px-5 py-4">
                     <li className="shrink-0">
                         <Link
