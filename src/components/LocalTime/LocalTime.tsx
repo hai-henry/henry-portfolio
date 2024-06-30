@@ -17,7 +17,7 @@ const LocalTime: React.FC<LocalTimeProps> = ({ city, localTimeZone }) => {
                     year: 'numeric', // Display Year
                     hour: '2-digit', // Display Hour
                     minute: '2-digit', // Display Minute
-                    second: '2-digit', // Display Second
+                    // second: '2-digit', // Display Second
                     hour12: true, // 12 Hour Format
                 })
                 .replace(',', ''); // Remove comma from time

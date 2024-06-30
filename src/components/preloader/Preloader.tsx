@@ -8,6 +8,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import LettersFadeIn from '../LettersFadeIn/Lettersfadein';
 
+// TODO: Make loading more random or slow the loading slightly at the end around 90-100
 const Preloader: React.FC = () => {
     const [width, setWidth] = useState<number>(1); // Loading bar & percentage value
     const intervalId = useRef<number | null>(null); // Store setInterval reference
