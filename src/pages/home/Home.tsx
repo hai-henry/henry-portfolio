@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import LocalTime from '../../components/LocalTime/LocalTime';
-
+// TODO: Change the order based on screen size, have localtime next to navbar for desktop
 const Home = () => {
     return (
         <>
