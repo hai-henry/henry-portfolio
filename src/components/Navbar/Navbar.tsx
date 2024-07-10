@@ -4,20 +4,31 @@ import { Link } from 'react-router-dom';
 const Navbar: React.FC = () => {
     return (
         <>
-            <nav className="">
-                <ul className="w-screen h-[51px] flex flex-row gap-x-[10%] px-5 py-4">
+            <nav>
+                <ul
+                    className="
+                w-screen md:w-auto
+                h-[51px] flex flex-row gap-x-[10%] items-center
+                px-5 md:px-0
+                py-4"
+                >
                     <li className="shrink-0">
                         <Link
                             to="/"
-                            className="font-montrealBold text-white uppercase text-left text-base"
+                            className="font-montrealBold text-white uppercase text-left 
+                            text-base md:text-md"
                         >
                             Henry Ho
                         </Link>
                     </li>
 
                     <div
-                        className="w-full h-full flex flex-wrap shrink justify-end gap-x-1
-                         text-accent uppercase text-xs"
+                        className="w-full md:w-auto
+                        h-full flex flex-wrap items-center
+                        shrink md:shrink-0
+                        justify-end md:justify-start  
+                        gap-x-1 text-accent uppercase 
+                        text-xs md:text-sm"
                     >
                         <li>
                             <Link to="/index">Index,</Link>

@@ -32,8 +32,11 @@ const LocalTime: React.FC<LocalTimeProps> = ({ city, localTimeZone }) => {
     return (
         <>
             <div
-                className="w-auto h-auto flex flex-row items-start justify-between px-5 
-                font-montrealBook text-accent text-[.625em] uppercase"
+                className="w-auto h-auto flex flex-row 
+                justify-between 
+                px-5 md:px-0 gap-x-4 items-center
+                font-montrealBook text-accent  uppercase
+                text-[.625em] "
             >
                 <p>Based in {city}</p>
                 <p>{time}</p>
