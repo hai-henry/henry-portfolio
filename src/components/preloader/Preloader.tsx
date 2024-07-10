@@ -30,12 +30,12 @@ const Preloader: React.FC = () => {
         load.current.to('.loader, #percent', {
             opacity: 0,
             duration: 0.8,
-            ease: 'power1.out',
+            ease: 'power1.in',
             // Unrender component after fading out
             isVisible: () => {
                 setTimeout(() => {
                     setIsVisible(false);
-                }, 1000);
+                }, 2000);
             },
         });
     }, []);

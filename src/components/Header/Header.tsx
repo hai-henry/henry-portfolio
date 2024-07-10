@@ -4,17 +4,22 @@ interface HeaderProps {
     title: string;
     description: string;
     year: number;
+    titleClassName?: string;
+    descriptionClassName?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, description, year }) => {
+const Header: React.FC<HeaderProps> = ({
+    title,
+    description,
+    year,
+    titleClassName,
+    descriptionClassName,
+}) => {
     return (
         <>
-            <div
-                className="w-screen h-auto flex flex-col gap-y-5 justify-center px-5 py-10
-                font-montrealMedium text-white uppercase"
-            >
-                <h1 className="text-5xl text-left">{title}</h1>
-                <p className="text-sm text-right">
+            <div>
+                <h1 className={titleClassName}>{title}</h1>
+                <p className={descriptionClassName}>
                     {description}
                     {year}
                 </p>

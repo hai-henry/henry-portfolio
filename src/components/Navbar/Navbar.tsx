@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     return (
         <>
             <nav className="">
-                <ul className="w-screen h-auto flex flex-row gap-x-[10%] px-5 py-4">
+                <ul className="w-screen h-[51px] flex flex-row gap-x-[10%] px-5 py-4">
                     <li className="shrink-0">
                         <Link
                             to="/"
