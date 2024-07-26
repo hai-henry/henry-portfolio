@@ -41,18 +41,26 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
                         localTimeZone="America/Chicago"
                     />
 
+                    <span
+                        className="flex flex-col justify-center items-center py-3
+                        font-montrealBook text-[10px] uppercase text-secondary"
+                    >
+                        <p>[ Scroll to Explore ]</p>
+                    </span>
+
                     <img
                         src="/src/assets/images/front_arch.jpg"
                         alt="Parametric Pavilion"
                         className="absolute object-cover w-[4190px] h-[1396px] align-bottom bottom-0 left-0 z-[-1] brightness-[.6]"
                     />
                 </div>
+
                 {/* Tablet/Desktop Layout */}
                 <div
                     className="
                 w-screen h-screen
                 hidden md:flex 
-                flex-col"
+                flex-col "
                 >
                     <div className="flex flex-row w-full justify-between items-center px-10">
                         <Navbar />
@@ -64,16 +72,25 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
 
                     <span
                         className="
-                flex flex-col justify-center items-center gap-y-5 w-full h-full px-5
-                font-montrealMedium text-white uppercase"
+                        flex flex-col justify-end items-center gap-y-5 w-full h-full px-5
+                        font-montrealMedium text-white uppercase"
                     >
                         <Header
                             title="Developer / Designer"
-                            titleClassName="text-5xl text-left"
+                            titleClassName="text-9xl
+                            text-left"
                             description="Portfolio ©"
-                            descriptionClassName="text-sm text-right"
+                            descriptionClassName="text-4xl
+                            text-right"
                             year={2024}
                         />
+                    </span>
+
+                    <span
+                        className="flex flex-col justify-center items-center py-5
+                        font-montrealBook text-xs uppercase text-secondary"
+                    >
+                        <p>[ Scroll to Explore ]</p>
                     </span>
 
                     <img
