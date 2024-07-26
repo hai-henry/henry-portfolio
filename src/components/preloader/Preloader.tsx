@@ -9,7 +9,13 @@ import gsap from 'gsap';
 import LettersFadeIn from '../LettersFadeIn/Lettersfadein';
 
 // TODO: Make loading more random or slow the loading slightly at the end around 90-100
-const Preloader: React.FC = () => {
+interface PreloaderProps {
+    onComplete: () => void;
+}
+
+const Preloader: React.FC<PreloaderProps> = ({
+    onComplete,
+}: PreloaderProps) => {
     const [width, setWidth] = useState<number>(1); // Loading bar & percentage value
     const intervalId = useRef<number | null>(null); // Store setInterval reference
     const load = useRef<gsap.core.Timeline>(); // GSAP timeline reference
@@ -26,11 +32,13 @@ const Preloader: React.FC = () => {
             opacity: 0, // Animate to 0 opacity
             zIndex: -1,
         });
+
         // Fade out loader and percentage
         load.current.to('.loader, #percent', {
             opacity: 0,
             duration: 0.8,
             ease: 'power1.in',
+            onComplete,
             // Unrender component after fading out
             isVisible: () => {
                 setTimeout(() => {
@@ -38,7 +46,7 @@ const Preloader: React.FC = () => {
                 }, 2000);
             },
         });
-    }, []);
+    }, [onComplete]);
 
     useEffect(() => {
         function frame() {
