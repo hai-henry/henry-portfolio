@@ -10,7 +10,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
     return (
         <>
-            <div>
+            <div className="overflow-hidden">
                 {/* Mobile Layout */}
                 <div
                     className="
@@ -22,14 +22,14 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
 
                     <span
                         className="
-                flex flex-col justify-center items-center gap-y-5 w-full h-full px-5
-                font-montrealMedium text-white uppercase"
+                         flex flex-col justify-center items-center w-full h-full px-5
+                        font-montrealMedium text-white uppercase"
                     >
                         <Header
                             title="Developer / Designer"
-                            titleClassName="text-5xl text-left"
+                            titleClassName="font-montrealBold text-[2.5rem] text-center leading-[85%]"
                             description="Portfolio ©"
-                            descriptionClassName="text-sm text-right"
+                            descriptionClassName="text-xs text-right"
                             year={2024}
                         />
                     </span>
@@ -72,23 +72,24 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
 
                     <span
                         className="
-                        flex flex-col justify-end items-center gap-y-5 w-full h-full px-5
+                        flex flex-row justify-center items-end gap-y-5 w-full h-full px-10
                         font-montrealMedium text-white uppercase"
                     >
                         <Header
                             title="Developer / Designer"
-                            titleClassName="text-9xl
-                            text-left"
+                            titleClassName="w-auto h-auto font-montrealBold 
+                            text-7xl lg:text-8xl xl:text-9xl
+                            text-left leading-[85%]"
                             description="Portfolio ©"
-                            descriptionClassName="text-4xl
+                            descriptionClassName="w-full h-auto text-2xl xl:text-3xl
                             text-right"
                             year={2024}
                         />
                     </span>
 
                     <span
-                        className="flex flex-col justify-center items-center py-5
-                        font-montrealBook text-xs uppercase text-secondary"
+                        className="w-full flex flex-col justify-center items-center py-[30px]
+                        font-montrealBook text-xs uppercase text-accent"
                     >
                         <p>[ Scroll to Explore ]</p>
                     </span>

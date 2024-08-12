@@ -17,13 +17,11 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
     return (
         <>
-            <div>
-                <h1 className={titleClassName}>{title}</h1>
-                <p className={descriptionClassName}>
-                    {description}
-                    {year}
-                </p>
-            </div>
+            <h1 className={titleClassName}>{title}</h1>
+            <p className={descriptionClassName}>
+                {description}
+                {year}
+            </p>
         </>
     );
 };
