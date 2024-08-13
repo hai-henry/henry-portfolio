@@ -6,7 +6,7 @@ import Home from './pages/home/Home';
 import Index from './pages/Index/Index';
 
 const App: React.FC = () => {
-    const [isPreloaderVisible, setIsPreloaderVisible] = useState<boolean>(true); // Visibility of Preloader (used to unRender)
+    const [, setIsPreloaderVisible] = useState<boolean>(true); // Visibility of Preloader (used to unRender)
 
     const handlePreloaderVisibility = () => {
         setIsPreloaderVisible(false);
@@ -16,10 +16,7 @@ const App: React.FC = () => {
         <>
             <Preloader onComplete={handlePreloaderVisibility} />
             <Routes>
-                <Route
-                    path="/"
-                    element={<Home isLoading={isPreloaderVisible} />}
-                />
+                <Route path="/" element={<Home />} />
                 <Route path="/index" element={<Index />} />
             </Routes>
         </>

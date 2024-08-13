@@ -3,14 +3,10 @@ import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import LocalTime from '../../components/LocalTime/LocalTime';
 
-interface HomeProps {
-    isLoading: boolean;
-}
-
-const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
+const Home: React.FC = () => {
     return (
         <>
-            <div className="overflow-hidden">
+            <div>
                 {/* Mobile Layout */}
                 <div
                     className="
@@ -20,10 +16,19 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
                 >
                     <Navbar />
 
+                    <span className="pt-2">
+                        {/* Change "city" to change "Based in {city}" change localTimeZone to preferred time zone
+                    Refer to https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for list of timezones */}
+                        <LocalTime
+                            city="Oklahoma City"
+                            localTimeZone="America/Chicago"
+                        />
+                    </span>
+
                     <span
                         className="
-                         flex flex-col justify-center items-center w-full h-full px-5
-                        font-montrealMedium text-white uppercase"
+                        flex flex-col justify-center items-center w-full h-full px-5
+                        font-montrealMedium text-secondary uppercase gap-1 mb-12"
                     >
                         <Header
                             title="Developer / Designer"
@@ -34,19 +39,13 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
                         />
                     </span>
 
-                    {/* Change "city" to change "Based in {city}" change localTimeZone to preferred time zone
-                    Refer to https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for list of timezones */}
-                    <LocalTime
-                        city="Oklahoma City"
-                        localTimeZone="America/Chicago"
-                    />
-
+                    {/* 
                     <span
-                        className="flex flex-col justify-center items-center py-3
-                        font-montrealBook text-[10px] uppercase text-secondary"
+                        className="w-screen h-auto flex flex-col justify-center items-center py-3
+                        font-montrealBook text-[10px] uppercase text-accent"
                     >
                         <p>[ Scroll to Explore ]</p>
-                    </span>
+                    </span> */}
 
                     <img
                         src="/src/assets/images/front_arch.jpg"
@@ -103,7 +102,27 @@ const Home: React.FC<HomeProps> = ({ isLoading }: HomeProps) => {
                     />
                 </div>
 
-                {isLoading ? null : <h1>Introduction</h1>}
+                <div className="w-screen h-screen flex flex-col px-5 py-[80px]">
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-start items-center text-secondary">
+                            <h1 className="h-full font-montrealMedium text-[40px] leading-10">
+                                Precision <br></br> meets artistry.
+                            </h1>
+                            <p className="font-montrealBook text-xl text-center align-middle py-[100px]">
+                                Developer with an architectural background
+                                blending creativity and precision, passionate
+                                about crafting digital experiences that express
+                                emotion and inspire.
+                            </p>
+                        </div>
+
+                        <img
+                            className=" w-[242px] h-[287px] "
+                            src="/src/assets/images/bwheader-profile.jpg"
+                            alt="Black and white profile picture"
+                        />
+                    </div>
+                </div>
             </div>
         </>
     );

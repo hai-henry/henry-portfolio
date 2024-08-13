@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import plugin from 'tailwindcss/plugin';
+
 export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
@@ -24,5 +27,19 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(({ addUtilities }) => {
+            addUtilities({
+                /* Chrome, Safari and Opera */
+                '.scrollbar-hidden::-webkit-scrollbar': {
+                    display: 'none',
+                },
+
+                '.scrollbar-hidden': {
+                    'scrollbar-width': 'none' /* Firefox */,
+                    '-ms-overflow-style': 'none' /* IE and Edge */,
+                },
+            });
+        }),
+    ],
 };
