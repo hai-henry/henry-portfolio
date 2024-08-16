@@ -102,7 +102,10 @@ const Home: React.FC = () => {
                     />
                 </div>
 
-                <div className="w-screen h-screen flex flex-col px-5 py-[80px]">
+                <div
+                    className="w-screen h-screen flex flex-col px-5 
+                py-[80px]"
+                >
                     <div className="flex flex-col justify-center items-center">
                         <div className="flex flex-col justify-start items-center text-secondary">
                             <h1 className="h-full font-montrealMedium text-[40px] leading-10">
