@@ -7,11 +7,11 @@ const Navbar: React.FC = () => {
             <nav className="xl:w-full">
                 <ul
                     className="
-                w-screen md:w-auto
-                h-[51px] flex flex-row items-center
-                gap-x-[12%] 
-                px-5 md:px-0
-                py-4"
+                    w-screen md:w-auto
+                    h-[51px] flex flex-row items-center
+                    gap-x-[12%] 
+                    px-5 md:px-0
+                    py-4"
                 >
                     <li className="shrink-0">
                         <Link

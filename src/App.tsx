@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Preloader from './components/Preloader/Preloader';
 import './App.css';
-import Home from './pages/home/Home';
+import Home from './pages/Landing/Landing';
 import Index from './pages/Index/Index';
 
 const App: React.FC = () => {

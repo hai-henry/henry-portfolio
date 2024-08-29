@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import LocalTime from '../../components/LocalTime/LocalTime';
+import Description from '../../components/Description/Description';
 
 const Home: React.FC = () => {
     return (
@@ -10,9 +11,9 @@ const Home: React.FC = () => {
                 {/* Mobile Layout */}
                 <div
                     className="
-                w-screen h-screen
-                flex md:hidden 
-                flex-col "
+                    w-screen h-screen
+                    flex md:hidden 
+                    flex-col "
                 >
                     <Navbar />
 
@@ -57,9 +58,9 @@ const Home: React.FC = () => {
                 {/* Tablet/Desktop Layout */}
                 <div
                     className="
-                w-screen h-screen
-                hidden md:flex 
-                flex-col "
+                    w-screen h-screen
+                    hidden md:flex 
+                    flex-col "
                 >
                     <div className="flex flex-row w-full justify-between items-center px-10">
                         <Navbar />
@@ -97,36 +98,12 @@ const Home: React.FC = () => {
                         src="/src/assets/images/front_arch.jpg"
                         alt="Parametric Pavilion"
                         className="absolute object-cover align-bottom bottom-0 left-0 z-[-1] brightness-[.6]
-                    w-[4190px] md:w-[5607px] xl:w-[5086px]
-                    h-[1396px] md:h-[1869px] xl:h-[1695px]"
+                        w-[4190px] md:w-[5607px] xl:w-[5086px]
+                        h-[1396px] md:h-[1869px] xl:h-[1695px]"
                     />
                 </div>
-
-                <div
-                    className="w-screen h-screen flex flex-col px-5 
-                py-[80px]"
-                >
-                    <div className="flex flex-col justify-center items-center">
-                        <div className="flex flex-col justify-start items-center text-secondary">
-                            <h1 className="h-full font-montrealMedium text-[40px] leading-10">
-                                Precision <br></br> meets artistry.
-                            </h1>
-                            <p className="font-montrealBook text-xl text-center align-middle py-[100px]">
-                                Developer with an architectural background
-                                blending creativity and precision, passionate
-                                about crafting digital experiences that express
-                                emotion and inspire.
-                            </p>
-                        </div>
-
-                        <img
-                            className=" w-[242px] h-[287px] "
-                            src="/src/assets/images/bwheader-profile.jpg"
-                            alt="Black and white profile picture"
-                        />
-                    </div>
-                </div>
             </div>
+            <Description />
         </>
     );
 };
