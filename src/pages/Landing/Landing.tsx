@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import LocalTime from '../../components/LocalTime/LocalTime';
 import Description from '../../components/Description/Description';
+import Footer from '../../components/Footer/Footer';
 
 const Home: React.FC = () => {
     return (
@@ -104,6 +105,7 @@ const Home: React.FC = () => {
                 </div>
             </div>
             <Description />
+            <Footer />
         </>
     );
 };
