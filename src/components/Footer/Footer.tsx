@@ -6,10 +6,10 @@ const Footer = () => {
             <footer className="w-screen h-3/4 flex flex-col gap-y-5 justify-end">
                 <div
                     className="w-auto h-auto flex flex-row justify-between 
-                    px-5 lg:px-28
+                    px-5 md:px-28
                     py-8
                     font-montrealMedium 
-                    text-xl lg:text-3xl
+                    text-xl md:text-2xl lg:text-3xl xl:text-4xl
                     uppercase"
                 >
                     <div className="w-auto h-auto flex flex-col items-start ">
@@ -47,12 +47,16 @@ const Footer = () => {
                 </div>
                 <h1
                     className="text-center 
-                text-7xl lg:text-9xl
+                text-7xl md:text-8xl lg:text-9xl xl:text-[180px]
                 font-montrealBold uppercase"
                 >
                     Get in touch
                 </h1>
-                <p className="text-center text-xl uppercase px-5 py-5">
+                <p
+                    className="text-center 
+                text-xl xl:text-2xl
+                uppercase px-5 py-5"
+                >
                     Designed and Developed by Henry Ho
                 </p>
             </footer>
