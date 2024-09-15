@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Preloader from './components/Preloader/Preloader.tsx';
+import Preloader from './components/Preloader/Preloader';
 import Home from './pages/Landing/Landing';
 import Index from './pages/Index/Index';
 

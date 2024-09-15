@@ -6,7 +6,7 @@ Refer to LettersFadeIn component to make changes to the text that fades in.
 
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
-import LettersFadeIn from '../LettersFadeIn/Lettersfadein.tsx';
+import LettersFadeIn from '../LettersFadeIn/Lettersfadein';
 
 const Preloader: React.FC = () => {
     const [width, setWidth] = useState<number>(1); // Loading bar & percentage value
