@@ -4,28 +4,33 @@
 
 @font-face {
     font-family: 'Montreal Book';
-    src: url('src/assets/fonts/PPNeueMontreal-Book.otf') format('truetype');
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Book.otf')
+        format('truetype');
 }
 @font-face {
     font-family: 'Montreal Bold';
-    src: url('src/assets/fonts/PPNeueMontreal-Bold.otf') format('truetype');
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Bold.otf')
+        format('truetype');
 }
 @font-face {
     font-family: 'Montreal Italic';
-    src: url('src/assets/fonts/PPNeueMontreal-Italic.otf') format('truetype');
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Italic.otf')
+        format('truetype');
 }
 @font-face {
     font-family: 'Montreal Medium';
-    src: url('src/assets/fonts/PPNeueMontreal-Medium.otf') format('truetype');
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Medium.otf')
+        format('truetype');
 }
 @font-face {
     font-family: 'Montreal SemiBolditalic';
-    src: url('src/assets/fonts/PPNeueMontreal-SemiBolditalic.otf')
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-SemiBolditalic.otf')
         format('truetype');
 }
 @font-face {
     font-family: 'Montreal Thin';
-    src: url('src/assets/fonts/PPNeueMontreal-Thin.otf') format('truetype');
+    src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Thin.otf')
+        format('truetype');
 }
 
 * {

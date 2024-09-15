@@ -43,7 +43,7 @@ const Description: React.FC = () => {
                         className="w-auto lg:w-1/3
                         h-auto
                         object-scaled-down object-right-top overflow-hidden order-2 md:order-1"
-                        src="/src/assets/images/bwheader-profile.jpg"
+                        src="/henry-portfolio/src/assets/images/bwheader-profile.jpg"
                         alt="Black and white profile picture"
                     />
                 </div>

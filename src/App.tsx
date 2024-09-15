@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <>
             {isLoading && <Preloader />}
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/henry-portfolio/" element={<Home />} />
                 <Route path="/index" element={<Index />} />
             </Routes>
         </>

@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                     </span> */}
 
                     <img
-                        src="/src/assets/images/front_arch.jpg"
+                        src="/henry-portfolio/src/assets/images/front_arch.jpg"
                         alt="Parametric Pavilion"
                         className="absolute object-cover w-[4190px] h-[1396px] align-bottom bottom-0 left-0 z-[-1] brightness-[.6]"
                     />
@@ -96,7 +96,7 @@ const Home: React.FC = () => {
                     </span>
 
                     <img
-                        src="/src/assets/images/front_arch.jpg"
+                        src="/henry-portfolio/src/assets/images/front_arch.jpg"
                         alt="Parametric Pavilion"
                         className="absolute object-cover align-bottom bottom-0 left-0 z-[-1] brightness-[.6]
                         w-[4190px] md:w-[5607px] xl:w-[5086px]
