@@ -1,4 +1,5 @@
 import React from 'react';
+import bwheader from '../../assets/images/bwheader-profile.jpg';
 
 const Description: React.FC = () => {
     return (
@@ -43,7 +44,7 @@ const Description: React.FC = () => {
                         className="w-auto lg:w-1/3
                         h-auto
                         object-scaled-down object-right-top overflow-hidden order-2 md:order-1"
-                        src="/henry-portfolio/src/assets/images/bwheader-profile.jpg"
+                        src={bwheader}
                         alt="Black and white profile picture"
                     />
                 </div>
