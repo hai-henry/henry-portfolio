@@ -5,32 +5,32 @@
 @font-face {
     font-family: 'Montreal Book';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Book.otf')
-        format('truetype');
+        format('opentype');
 }
 @font-face {
     font-family: 'Montreal Bold';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Bold.otf')
-        format('truetype');
+        format('opentype');
 }
 @font-face {
     font-family: 'Montreal Italic';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Italic.otf')
-        format('truetype');
+        format('opentype');
 }
 @font-face {
     font-family: 'Montreal Medium';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Medium.otf')
-        format('truetype');
+        format('opentype');
 }
 @font-face {
     font-family: 'Montreal SemiBolditalic';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-SemiBolditalic.otf')
-        format('truetype');
+        format('opentype');
 }
 @font-face {
     font-family: 'Montreal Thin';
     src: url('/henry-portfolio/src/assets/fonts/PPNeueMontreal-Thin.otf')
-        format('truetype');
+        format('opentype');
 }
 
 * {
