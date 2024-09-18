@@ -6,7 +6,7 @@ const Description: React.FC = () => {
         <>
             <div
                 className="w-screen h-screen flex flex-col px-5 md:px-14 
-                    py-[80px] justify-center items-center"
+                    py-[80px] justify-center items-center "
             >
                 <div
                     className="w-full flex flex-col md:flex-row

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 const Footer = () => {
     return (
@@ -17,7 +18,7 @@ const Footer = () => {
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                href="mailto:hvnryho@gmail.com"
+                                href="mailto:henryho.hai@gmail.com"
                             >
                                 Email
                             </a>
@@ -41,9 +42,7 @@ const Footer = () => {
                             </a>
                         </button>
                     </div>
-                    <div>
-                        <button className="uppercase">Back to top</button>
-                    </div>
+                    <ScrollToTop />
                 </div>
                 <h1
                     className="text-center 
