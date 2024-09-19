@@ -9,6 +9,7 @@ import frontArch from '../../assets/images/front_arch.jpg';
 
 // TODO: Update font sizes for better aesthetics
 // TODO: Fix custom font imports
+// TODO: Make webpage start at top every time refreshed
 const Home: React.FC = () => {
     return (
         <>

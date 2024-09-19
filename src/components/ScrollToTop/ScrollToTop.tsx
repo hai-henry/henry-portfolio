@@ -27,7 +27,7 @@ const ScrollButton = () => {
             <button
                 onClick={scrollToTop}
                 style={{ display: visible ? 'inline' : 'none' }}
-                className="uppercase"
+                className="uppercase text-secondary"
             >
                 Back to top
             </button>
