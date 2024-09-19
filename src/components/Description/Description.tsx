@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React, { useEffect } from 'react';
 import bwheader from '../../assets/images/bwheader-profile.jpg';
 import SplitType from 'split-type';
@@ -7,14 +8,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Description: React.FC = () => {
     useEffect(() => {
-        const typeSplit = new SplitType('[animate]', {
+        new SplitType('[data-animate]', {
             types: 'lines,words,chars', // Specifies that we want to split the text into lines, words, and characters
             tagName: 'span', // Each part (line, word, char) will be wrapped in a <span> element
         });
 
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.from('[animate] .line', {
+        gsap.from('[data-animate] .line', {
             y: '100%',
             opacity: 0,
             duration: 0.5,
@@ -22,7 +23,7 @@ const Description: React.FC = () => {
             stagger: 0.1,
 
             scrollTrigger: {
-                trigger: '[animate]',
+                trigger: '[data-animate]',
                 start: 'top 80%',
                 end: 'bottom 50%',
                 scrub: true,
@@ -48,7 +49,7 @@ const Description: React.FC = () => {
                         order-1 md:order-2"
                     >
                         <h1
-                            animate="true"
+                            data-animate="true"
                             className="h-full w-full font-montrealMedium 
                             text-[40px] md:text-5xl lg:text-6xl xl:text-8xl
                             text-right
@@ -57,7 +58,7 @@ const Description: React.FC = () => {
                             Precision <br></br> meets artistry.
                         </h1>
                         <p
-                            animate="true"
+                            data-animate="true"
                             className="md:w-[370px] lg:w-[445px] xl:w-[570px]
                             font-montrealBook 
                             text-xl lg:text-2xl xl:text-3xl
