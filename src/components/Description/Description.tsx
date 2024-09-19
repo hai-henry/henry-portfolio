@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Description: React.FC = () => {
     useEffect(() => {
         new SplitType('[data-animate]', {
+            // Target the element with the data-animate attribute
             types: 'lines,words,chars', // Specifies that we want to split the text into lines, words, and characters
             tagName: 'span', // Each part (line, word, char) will be wrapped in a <span> element
         });
@@ -29,6 +30,30 @@ const Description: React.FC = () => {
                 scrub: true,
             },
         });
+    }, []);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo(
+            '[data-animate-image]', // Target element with the data-animate-image attribute
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                ease: 'power1.out',
+                scrollTrigger: {
+                    trigger: '[data-animate-image]',
+                    start: 'top 80%',
+                    end: 'bottom 60%',
+                    scrub: true,
+                },
+            }
+        );
     }, []);
 
     return (
@@ -72,6 +97,7 @@ const Description: React.FC = () => {
                     </div>
 
                     <img
+                        data-animate-image="true"
                         className="w-auto lg:w-1/3
                         h-auto
                         object-scaled-down object-right-top overflow-hidden order-2 md:order-1"
