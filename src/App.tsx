@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Preloader from './components/Preloader/Preloader';
 import Home from './pages/Landing/Landing';
@@ -11,6 +11,10 @@ const App: React.FC = () => {
         setTimeout(() => {
             setIsLoading(false);
         }, 3500);
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top of the page on refresh
     }, []);
 
     return (
