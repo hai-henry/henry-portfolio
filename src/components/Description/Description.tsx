@@ -25,7 +25,7 @@ const Description: React.FC = () => {
 
             scrollTrigger: {
                 trigger: '[data-animate]',
-                start: 'top 80%',
+                start: 'top 70%',
                 end: 'bottom 50%',
                 scrub: true,
             },
@@ -48,8 +48,8 @@ const Description: React.FC = () => {
                 ease: 'power1.out',
                 scrollTrigger: {
                     trigger: '[data-animate-image]',
-                    start: 'top 80%',
-                    end: 'bottom 60%',
+                    start: 'top 90%',
+                    end: 'bottom 50%',
                     scrub: true,
                 },
             }

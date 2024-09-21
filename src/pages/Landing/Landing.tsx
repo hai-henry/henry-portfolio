@@ -6,8 +6,17 @@ import Description from '../../components/Description/Description';
 import Footer from '../../components/Footer/Footer';
 
 import frontArch from '../../assets/images/front_arch.jpg';
+
 // TODO: Make webpage scroll smoother
 const Home: React.FC = () => {
+    const [showComponents, setShowComponents] = React.useState(false);
+
+    React.useEffect(() => {
+        setTimeout(() => {
+            setShowComponents(true);
+        }, 3000);
+    }, []);
+
     return (
         <>
             <div>
@@ -106,9 +115,13 @@ const Home: React.FC = () => {
                     />
                 </div>
             </div>
-            {/* TODO: Prevent the scrolling until preloader finishes loading */}
-            <Description />
-            <Footer />
+
+            {showComponents && (
+                <div>
+                    <Description />
+                    <Footer />
+                </div>
+            )}
         </>
     );
 };
