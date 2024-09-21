@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Preloader from './components/Preloader/Preloader';
 import Home from './pages/Landing/Landing';
-import Index from './pages/Index/Index';
 
 const App: React.FC = () => {
     const [isLoading, setIsLoading] = React.useState(true);
@@ -22,7 +21,6 @@ const App: React.FC = () => {
             {isLoading && <Preloader />}
             <Routes>
                 <Route path="/henry-portfolio/" element={<Home />} />
-                <Route path="/index" element={<Index />} />
             </Routes>
         </>
     );

@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
                 >
                     <li className="shrink-0">
                         <Link
-                            to="/"
+                            to="/henry-portfolio/"
                             className="font-montrealBold text-accent uppercase text-left
                             text-base md:text-md xl:text-2xl"
                         >

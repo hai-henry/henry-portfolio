@@ -106,6 +106,7 @@ const Home: React.FC = () => {
                     />
                 </div>
             </div>
+            {/* TODO: Prevent the scrolling until preloader finishes loading */}
             <Description />
             <Footer />
         </>
