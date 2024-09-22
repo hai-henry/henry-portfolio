@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
                 <ul
                     className="
                     w-screen md:w-auto
-                    h-[51px] flex flex-row items-center
+                    h-[51px] flex flex-row items-center 
                     gap-x-[12%] 
                     px-5 md:px-0
                     py-4"
@@ -30,26 +30,21 @@ const Navbar: React.FC = () => {
                         justify-end gap-x-1 text-accent uppercase 
                         text-xs md:text-sm xl:text-xl"
                     >
-                        <li>
-                            <Link to="/index">Index,</Link>
+                        {/* <li>
+                            <Link to="/henry-portfolio/">Index,</Link>
                         </li>
                         <li>
-                            <Link to="/index">Work,</Link>
+                            <Link to="/henry-portfolio/">Work,</Link>
                         </li>
                         <li>
-                            <Link to="/index">Concepts,</Link>
+                            <Link to="/henry-portfolio/">Concepts,</Link>
                         </li>
                         <li>
-                            <Link to="/index">About,</Link>
+                            <Link to="/henry-portfolio/">About,</Link>
                         </li>
-                        <li>
-                            <Link
-                                to="/index"
-                                className="text-white font-montrealMedium"
-                            >
-                                Contact
-                            </Link>
-                        </li>
+                        <li className="text-white font-montrealMedium">
+                            <a href="mailto:henryho.hai@gmail.com">Contact</a>
+                        </li> */}
                     </div>
                 </ul>
             </nav>
