@@ -15,6 +15,13 @@ const Home: React.FC = () => {
         setTimeout(() => {
             setShowComponents(true);
         }, 3000);
+
+        (async () => {
+            const LocomotiveScroll = (await import('locomotive-scroll'))
+                .default;
+
+            new LocomotiveScroll();
+        })();
     }, []);
 
     return (
