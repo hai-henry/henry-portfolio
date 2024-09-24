@@ -7,7 +7,6 @@ import Footer from '../../components/Footer/Footer';
 
 import frontArch from '../../assets/images/front_arch.jpg';
 
-// TODO: Make webpage scroll smoother
 const Home: React.FC = () => {
     const [showComponents, setShowComponents] = React.useState(false);
 
