@@ -23,6 +23,8 @@ const Home: React.FC = () => {
         })();
     }, []);
 
+    // TODO: Update code for mobile and tablet/desktop layouts
+    // Better way to integrate this?
     return (
         <>
             <div>
